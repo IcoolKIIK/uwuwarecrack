@@ -1,5 +1,4 @@
---CaracalLIVES
--- (WARNING: This Repository is Licensed! You are not permitted to use/copy this User Interface library)
+-- (WARNING: This Repository is Licensed by your mom! You are not permitted to use/copy this User Interface library)
 local library = { 
 	flags = { }, 
 	items = { } 
@@ -28,34 +27,34 @@ library.theme = {
     cursor = true,
     cursorimg = "https://t0.rbxcdn.com/42f66da98c40252ee151326a82aab51f",
     backgroundcolor = Color3.fromRGB(20, 20, 20),
-    tabstextcolor = Color3.fromRGB(255, 255, 255),
-    bordercolor = Color3.fromRGB(1, 1, 1),
-    accentcolor = Color3.fromRGB(255, 0, 0),
-    accentcolor2 = Color3.fromRGB(255, 0, 0),
+    tabstextcolor = Color3.fromRGB(240, 240, 240),
+    bordercolor = Color3.fromRGB(60, 60, 60),
+    accentcolor = Color3.fromRGB(28, 56, 139),
+    accentcolor2 = Color3.fromRGB(16, 31, 78),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
-    sectorcolor = Color3.fromRGB(39, 39, 39),
+    sectorcolor = Color3.fromRGB(30, 30, 30),
     toptextcolor = Color3.fromRGB(255, 255, 255),
     topheight = 48,
-    topcolor = Color3.fromRGB(255, 0, 0),
-    topcolor2 = Color3.fromRGB(255, 0, 0),
-    buttoncolor = Color3.fromRGB(44, 44, 44),
-    buttoncolor2 = Color3.fromRGB(44, 44, 44),
+    topcolor = Color3.fromRGB(30, 30, 30),
+    topcolor2 = Color3.fromRGB(30, 30, 30),
+    buttoncolor = Color3.fromRGB(49, 49, 49),
+    buttoncolor2 = Color3.fromRGB(39, 39, 39),
     itemscolor = Color3.fromRGB(200, 200, 200),
     itemscolor2 = Color3.fromRGB(210, 210, 210)
 }
 
 if not _G.CriminalityInfo then
     _G.CriminalityInfo = {
-        SilentAimColor = Color3.fromRGB(255, 255, 255),
-        ESPColor = Color3.fromRGB(255, 255, 255)
+        SilentAimColor = Color3.fromRGB(252, 172, 255),
+        ESPColor = Color3.fromRGB(252, 172, 255)
     }
 end
 
 if not _G.AccentColors then
     _G.AccentColors = {
-        Accent1 = Color3.fromRGB(252, 172, 255),
-        Accent2 = Color3.fromRGB(255, 172, 200)
+        Accent1 = Color3.fromRGB(139, 0, 0),
+        Accent2 = Color3.fromRGB(139, 0, 0)
     }
 end
 
@@ -3419,7 +3418,7 @@ function library:CreateWindow(name, size, hidebutton)
         function tab:CreateConfigSystem(side)
             local configSystem = { }
 
-            configSystem.configFolder = "Caracal.wtfLIVES"
+            configSystem.configFolder = "Monolith.vip"
             if (not isfolder(configSystem.configFolder)) then
                 makefolder(configSystem.configFolder)
             end
@@ -3545,7 +3544,7 @@ function library:CreateWindow(name, size, hidebutton)
             return configSystem
         end
 
-        --[[ not finished lol
+
         function tab:CreatePlayerlist(name)
             local list = { }
             list.name = name or ""
@@ -3662,7 +3661,7 @@ function library:CreateWindow(name, size, hidebutton)
             
             return list
         end
-        ]]--
+
 
         table.insert(window.Tabs, tab)
         return tab
